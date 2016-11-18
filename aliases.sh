@@ -1,0 +1,1 @@
+alias tot='du -cksh'
