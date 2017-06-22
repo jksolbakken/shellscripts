@@ -7,3 +7,5 @@ alias weather='curl wttr.in/Oslo'
 alias brup='brew update && brew upgrade && brew cleanup'
 
 alias gw='./gradlew'
+
+alias serve-dir='python -m SimpleHTTPServer'
