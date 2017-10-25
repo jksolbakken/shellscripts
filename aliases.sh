@@ -9,3 +9,5 @@ alias brup='brew update && brew upgrade && brew cleanup'
 alias gw='./gradlew'
 
 alias serve='python3 -m http.server'
+
+alias -g gi='grep -i'
