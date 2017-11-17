@@ -11,3 +11,5 @@ alias gw='./gradlew'
 alias serve='python3 -m http.server'
 
 alias -g gi='grep -i'
+
+alias k='kubectl'
