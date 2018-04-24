@@ -15,3 +15,5 @@ alias -g gi='grep -i'
 alias k='kubectl'
 
 alias sniff='sudo lsof -iTCP -sTCP:LISTEN -n -P'
+
+alias myip='ifconfig | grep "inet " | grep -Fv 127.0.0.1'
