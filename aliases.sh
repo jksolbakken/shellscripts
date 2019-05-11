@@ -17,3 +17,7 @@ alias k='kubectl'
 alias sniff='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
 alias myip='ifconfig | grep "inet " | grep -Fv 127.0.0.1'
+
+alias restartaudio='sudo kill `ps -ax | grep coreaudiod | grep sbin | awk "{print $1}"`'
+
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
