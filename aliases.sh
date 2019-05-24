@@ -12,7 +12,7 @@ alias serve='python3 -m http.server'
 
 alias -g gi='grep -i'
 
-alias k="HTTPS_PROXY=socks5://localhost:14122 kubectl"
+alias k="HTTPS_PROXY=socks5://localhost:14122 NO_PROXY=login.microsoftonline.com kubectl"
 
 alias sniff='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
