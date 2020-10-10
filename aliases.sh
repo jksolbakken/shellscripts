@@ -12,8 +12,6 @@ alias serve='python3 -m http.server'
 
 alias -g gi='grep -i'
 
-alias k="kubectl"
-
 alias sniff='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
 alias localip='ifconfig | grep "inet " | grep -Fv 127.0.0.1'
