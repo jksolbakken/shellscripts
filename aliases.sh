@@ -20,10 +20,4 @@ alias restartaudio='sudo kill `ps -ax | grep coreaudiod | grep sbin | awk "{prin
 
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-alias proxcurl='HTTPS_PROXY="socks5://localhost:14122" curl'
-
-alias proxgradle=gradle "-DsocksNonProxyHosts=*.confluent.io|*.apache.org|*.bintray.com|repo.jfrog.org|*.bintray.com|*.cloudfront.net" -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=14122
-
-alias pods='{ name=$(cat -); kubectl get pods -lapp=$name; }<<<'
-
-alias ings='{ name=$(cat -); kubectl get ing -lapp=$name; }<<<'
+alias pgw="ping `netstat -rn -f inet | awk '$1 == "default" {print $2}' | head -1`"
