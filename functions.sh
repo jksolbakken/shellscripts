@@ -10,6 +10,6 @@ sha384verify() {
     echo "$1 $2" | sha384sum --check
 }
 
-sha256verify() {
-    echo "$1 $2" | sha384sum --check
+sha512verify() {
+    echo "$1 $2" | sha512sum --check
 }
