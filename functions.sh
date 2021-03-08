@@ -1,5 +1,9 @@
-klogf () {
+klogfall () {
 	kubectl logs -f deployment/$1 --all-containers
+}
+
+klogfapp () {
+	kubectl logs -f deployment/$1 -c $1
 }
 
 sha256verify() {
