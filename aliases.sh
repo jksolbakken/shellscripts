@@ -21,3 +21,6 @@ alias restartaudio='sudo kill `ps -ax | grep coreaudiod | grep sbin | awk "{prin
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 alias pgw="ping `netstat -rn -f inet | awk '$1 == "default" {print $2}' | head -1`"
+
+alias kctx="kubectx"
+alias kns="kubens"
