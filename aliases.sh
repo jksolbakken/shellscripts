@@ -24,3 +24,5 @@ alias pgw="ping `netstat -rn -f inet | awk '$1 == "default" {print $2}' | head -
 
 alias kctx="kubectx"
 alias kns="kubens"
+
+alias mvndirs='mkdir -p src/{main,test}/{kotlin,resources}/'
