@@ -2,7 +2,7 @@ alias tot='du -cksh'
 
 alias rmdocker='docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
 
-alias weather='curl wttr.in/Oslo'
+alias weather='curl v2.wttr.in/Oslo'
 
 alias brup='brew update && brew upgrade && brew cleanup'
 
@@ -26,3 +26,5 @@ alias kctx="kubectx"
 alias kns="kubens"
 
 alias mvndirs='mkdir -p src/{main,test}/{kotlin,resources}/'
+
+alias killport="lsof -n -i:$1 | grep LISTEN | awk '{ print $2 }' | uniq | xargs -r kill"
