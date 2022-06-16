@@ -40,3 +40,7 @@ goGo() {
 ppgrep() { 
     pgrep "$@" | xargs ps -fp 2> /dev/null; 
 }
+
+function killport() { 
+	lsof -i:$1 -tl | xargs kill 
+}
