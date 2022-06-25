@@ -14,7 +14,7 @@ alias -g gi='grep -i'
 
 alias sniff='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
-alias localip='ifconfig | grep "inet " | grep -Fv 127.0.0.1'
+alias localip='ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '\''{ print $2 }'\'''
 
 alias restartaudio='sudo kill `ps -ax | grep coreaudiod | grep sbin | awk "{print $1}"`'
 
