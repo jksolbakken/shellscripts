@@ -55,5 +55,5 @@ decode_base64_url() {
 }
 
 decode_jwt(){
-   decode_base64_url $(echo -n $2 | cut -d "." -f $1) | jq .
+   echo -n $2 | cut -d "." -f $1 | base64 -d | jq .
 }
