@@ -48,3 +48,7 @@ killport() {
 decode_jwt(){
    echo -n $2 | cut -d "." -f $1 | base64 -d | jq 
 }
+
+zoom() { 
+	open "zoommtg://zoom.us/join?confno=$1" 
+}
