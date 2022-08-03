@@ -45,15 +45,6 @@ killport() {
 	lsof -i:$1 -tl | xargs kill 
 }
 
-decode_base64_url() {
-  local len=$((${#1} % 4))
-  local result="$1"
-  if [ $len -eq 2 ]; then result="$1"'=='
-  elif [ $len -eq 3 ]; then result="$1"'='
-  fi
-  echo "$result" | tr '_-' '/+' | openssl enc -d -base64
-}
-
 decode_jwt(){
-   echo -n $2 | cut -d "." -f $1 | base64 -d | jq .
+   echo -n $2 | cut -d "." -f $1 | base64 -d | jq 
 }
