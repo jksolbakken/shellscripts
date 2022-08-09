@@ -28,3 +28,5 @@ alias kns="kubens"
 alias mvndirs='mkdir -p src/{main,test}/{kotlin,resources}/'
 
 alias lobby="zoom 4267640733"
+
+alias kdr='kubectl --dry-run=client -o yaml'
