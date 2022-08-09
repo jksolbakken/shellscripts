@@ -27,8 +27,4 @@ alias kns="kubens"
 
 alias mvndirs='mkdir -p src/{main,test}/{kotlin,resources}/'
 
-alias jwth="decode_jwt 1"
-
-alias jwtp="decode_jwt 2"
-
 alias lobby="zoom 4267640733"

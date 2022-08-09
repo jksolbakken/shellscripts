@@ -45,10 +45,10 @@ killport() {
 	lsof -i:$1 -tl | xargs kill 
 }
 
-decode_jwt(){
-   echo -n $2 | cut -d "." -f $1 | base64 -d | jq 
-}
-
 zoom() { 
 	open "zoommtg://zoom.us/join?confno=$1" 
+}
+
+jwt() { 
+	echo -n $1 | jc --jwt | jq 
 }
