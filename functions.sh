@@ -52,3 +52,14 @@ zoom() {
 jwt() { 
 	echo -n $1 | jc --jwt | jq 
 }
+
+hedo() {
+    adam=$(id | grep -o "80(admin)")
+    if [[ "$adam" != "" ]]; then
+        echo "I Have The Power"
+    else
+        echo "By The Power Of Greyskull"
+        /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+        echo "I Have The Power"
+    fi
+}
