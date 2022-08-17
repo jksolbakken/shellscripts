@@ -63,3 +63,9 @@ hedo() {
         echo "I Have The Power"
     fi
 }
+
+
+hedont() {
+    /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
+    echo "Power gone..."
+}
